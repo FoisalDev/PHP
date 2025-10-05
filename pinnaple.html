@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+    <body>
+        <form action="pinnaple.php" method="post">
+            Quantity: <input type="number" name="quantity" required><br>
+            Home Delivery:
+            <input type="radio" name="hd" value="yes" id="hd_yes">Yes
+            <input type="radio" name="hd" value="no" id="hd_no" checked>No<br>
+            Address:
+            <select name="address" required>
+                <option disabled selected hidden>Select City</option>
+                <option value="dhk">Dhaka</option>
+                <option value="ctg">Chittagong</option>
+            </select><br>
+            Tip: <input type="number" name="tip" value="0" min="0"><br>
+            <button type="submit">Generate Bill</button>
+        </form>
+    </body>
+
+</html>
